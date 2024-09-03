@@ -1,0 +1,38 @@
+{
+  "name": "pino-transport-ecs",
+  "version": "1.0.0",
+  "description": "A Pino transform transport that converts logs to the Elastic Common Schema format, using the official formatters from Elastic.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b tsconfig.dist.json",
+    "dev": "NODE_ENV=development ergol tests/application/app.ts -c ergol.config.json",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky",
+    "test": "vitest run --coverage",
+    "test:types": "tsc -p tsconfig.dist.json --noEmit",
+    "test:watch": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/node": "^22.5.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "ergol": "^1.0.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-kuzzle": "^0.0.13",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "semantic-release-config-kuzzle": "^1.0.0",
+    "semantic-release-slack-bot": "^4.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.4.5",
+    "vitest": "^2.0.5"
+  }
+}
