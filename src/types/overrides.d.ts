@@ -50,7 +50,7 @@ declare module 'pino-abstract-transport' {
     expectPinoConfig?: boolean;
   };
 
-  type PinoConfig = {
+  export type PinoConfig = {
     errorKey: string;
     messageKey: string;
     levels: {

@@ -9,8 +9,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky",
-    "test": "npm run test:functional && npm run test:types",
-    "test:functional": "jest --runInBand",
+    "test": "npm run test:unit && npm run test:types",
+    "test:unit": "jest --runInBand",
     "test:types": "tsc -p tsconfig.dist.json --noEmit"
   },
   "keywords": [],
