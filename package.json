@@ -1,6 +1,6 @@
 {
   "name": "pino-transport-ecs",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "A Pino transform transport that converts logs to the Elastic Common Schema format, using the official formatters from Elastic.",
   "main": "dist/index.js",
   "scripts": {
