@@ -2,7 +2,7 @@
   "name": "pino-transport-ecs",
   "version": "1.0.0-beta.1",
   "description": "A Pino transform transport that converts logs to the Elastic Common Schema format, using the official formatters from Elastic.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc -b tsconfig.dist.json",
     "dev": "NODE_ENV=development ergol tests/application/app.ts -c ergol.config.json",
@@ -44,5 +44,8 @@
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "~5.4.5"
-  }
+  },
+  "files": [
+    "dist/"
+  ]
 }
