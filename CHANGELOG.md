@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/kuzzleio/pino-transport-ecs/compare/v1.0.0...v1.0.1) (2024-09-10)
+
+### Bug Fixes
+
+- **deps:** fix [@types](https://github.com/types) dep not in dev dependencies ([07b7885](https://github.com/kuzzleio/pino-transport-ecs/commit/07b7885c56b82ed73bf5d0063af9e6d3f9e9235c))
+
 # 1.0.0 (2024-09-10)
 
 ### Bug Fixes
