@@ -1,3 +1,9 @@
+## [1.1.0-beta.1](https://github.com/kuzzleio/pino-transport-ecs/compare/v1.0.1...v1.1.0-beta.1) (2025-02-26)
+
+### Features
+
+- **transform:** implement lightweight templating for bindings ([686906d](https://github.com/kuzzleio/pino-transport-ecs/commit/686906df57bc7128b041d8ad8b92cabf341ad428))
+
 ## [1.0.1](https://github.com/kuzzleio/pino-transport-ecs/compare/v1.0.0...v1.0.1) (2024-09-10)
 
 ### Bug Fixes
