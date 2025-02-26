@@ -35,7 +35,7 @@ declare module 'pino-abstract-transport' {
      * }
      * ```
      * */
-    // eslint-disable-next-line @typescript-eslint/ban-types
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
     close?: (err: Error, cb: Function) => void | Promise<void>;
 
     /**

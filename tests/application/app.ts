@@ -7,6 +7,11 @@ const transport = pino.transport({
       options: {
         additionalBindings: {
           foo: 'bar',
+          baz: '{{ currentDate }}',
+          nested: {
+            qux: '{{ currentDate }}',
+          },
+          array: ['{{ currentDate }}', '{{ currentDate }}', '{{ currentDate }}'],
         },
       },
     },

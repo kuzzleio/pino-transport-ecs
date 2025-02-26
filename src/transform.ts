@@ -2,6 +2,7 @@ import { Transform } from 'node:stream';
 import { LoggerOptions } from 'pino';
 import build, { type PinoConfig } from 'pino-abstract-transport';
 import { deserializeError } from 'serialize-error';
+import { expandBinding } from './helpers';
 import { PinoTransportEcsOptions } from './types';
 
 export const getTransform = (
@@ -14,7 +15,7 @@ export const getTransform = (
     objectMode: true,
     transform(line, enc, cb) {
       if (options?.additionalBindings) {
-        line = { ...line, ...options.additionalBindings };
+        line = { ...line, ...expandBinding(options.additionalBindings) };
       }
 
       if (pinoConfigEcs.messageKey && source.messageKey !== pinoConfigEcs.messageKey) {
