@@ -3,16 +3,19 @@
   "compilerOptions": {
     "lib": ["ESNext"],
     "target": "ESNext",
-    "module": "CommonJS",
+    "module": "nodenext",
     "esModuleInterop": true,
     "allowJs": true,
-    "moduleResolution": "Node",
+    "moduleResolution": "nodenext",
     "listEmittedFiles": true,
     "declaration": true,
     "sourceMap": true,
     "strict": true,
+    "isolatedModules": true,
+    "types": ["node", "jest"],
     "skipLibCheck": true,
     "noFallthroughCasesInSwitch": true,
+    "rootDir": ".",
     "outDir": "dist/"
   },
   "ts-node": {
